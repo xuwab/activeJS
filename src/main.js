@@ -1,7 +1,9 @@
 let demo = document.querySelector("#html");
 let style = document.querySelector("#style");
 let string = `
-/*Hello,World!Hello,World!Hello,World!Hello,World!Hello,World!Hello,World!Hello,World!*/
+/*Hello,World!
+/* 测试画一个八卦图
+*/
 #div1{
     border:1px solid red;
     width:200px;
@@ -9,7 +11,7 @@ let string = `
 }
 
 /* 
-/* 画一个八卦,先画圆
+/* 先画背景圆
 */
 #div1{
 border-radius:50%;
@@ -23,7 +25,7 @@ border:none;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
 /* 
-/* 加上两个小圆
+/* 添加两个小圆
 */
 #div1::before{
         width:100px;
@@ -65,7 +67,7 @@ let scrollShow = ()=>{
             demo.scrollTo(0,9999);
             scrollShow();
         }
-    },1);
+    },30);
 }
 
 scrollShow();

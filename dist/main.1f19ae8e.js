@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"main.js":[function(require,module,exports) {
 var demo = document.querySelector("#html");
 var style = document.querySelector("#style");
-var string = "\n/*Hello,World!Hello,World!Hello,World!Hello,World!Hello,World!Hello,World!Hello,World!*/\n#div1{\n    border:1px solid red;\n    width:200px;\n    height: 200px;\n}\n\n/* \n/* \u753B\u4E00\u4E2A\u516B\u5366,\u5148\u753B\u5706\n*/\n#div1{\nborder-radius:50%;\nbox-shadow:0 0 3px rgba(0,0,0,0.5);\nborder:none;\n}\n/* \n/* \u52A0\u4E0A\u80CC\u666F\u989C\u8272\n*/\n#div1{\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n/* \n/* \u52A0\u4E0A\u4E24\u4E2A\u5C0F\u5706\n*/\n#div1::before{\n        width:100px;\n        height:100px;\n        top: 0;\n        transform:translateX(50%);\n        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n        border-radius:50%;\n        position: absolute;\n  }\n  \n  #div1::after{\n        width:100px;\n        height:100px;\n        bottom: 0;\n        transform:translateX(50%);\n        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);\n        border-radius:50%;\n        position: absolute;\n  }\n";
+var string = "\n/*Hello,World!\n/* \u6D4B\u8BD5\u753B\u4E00\u4E2A\u516B\u5366\u56FE\n*/\n#div1{\n    border:1px solid red;\n    width:200px;\n    height: 200px;\n}\n\n/* \n/* \u5148\u753B\u80CC\u666F\u5706\n*/\n#div1{\nborder-radius:50%;\nbox-shadow:0 0 3px rgba(0,0,0,0.5);\nborder:none;\n}\n/* \n/* \u52A0\u4E0A\u80CC\u666F\u989C\u8272\n*/\n#div1{\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n/* \n/* \u6DFB\u52A0\u4E24\u4E2A\u5C0F\u5706\n*/\n#div1::before{\n        width:100px;\n        height:100px;\n        top: 0;\n        transform:translateX(50%);\n        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n        border-radius:50%;\n        position: absolute;\n  }\n  \n  #div1::after{\n        width:100px;\n        height:100px;\n        bottom: 0;\n        transform:translateX(50%);\n        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);\n        border-radius:50%;\n        position: absolute;\n  }\n";
 var index = 0;
 var showString = '';
 
@@ -143,7 +143,7 @@ var scrollShow = function scrollShow() {
       demo.scrollTo(0, 9999);
       scrollShow();
     }
-  }, 1);
+  }, 30);
 };
 
 scrollShow();
